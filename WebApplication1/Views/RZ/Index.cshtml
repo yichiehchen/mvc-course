@@ -1,0 +1,25 @@
+﻿@*12345*@
+@foreach (var item in Model)
+{
+    @item
+}
+
+@*1 2 3 4 5*@
+@foreach (var item in Model)
+{
+    @(item + " ")
+}
+
+@*<ul><li></li></ul>*@
+<ul>
+@foreach (var item in Model)
+{
+  <li>@item</li>
+}
+</ul>
+
+@*12345(垂直)*@
+@foreach (var item in Model)
+{
+<text>@item</text>
+}
